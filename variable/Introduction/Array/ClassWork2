@@ -1,0 +1,65 @@
+
+let obj1 = {name : "Sydney",
+           population : 1250000,
+           temp : 10.0,
+           currency : "NG"};
+
+let obj2 = {name : "Lagos",
+           population : 1250000,
+           temp : 15.0,
+           currency : "NG"}
+let obj3 = {name : "London",
+           population : 1250000,
+           temp : -5.0,
+           currency : "NG"};
+let obj4 = {name : "Sydney",
+           population : 1250000,
+           temp : 10.0,
+           currency : "NG"};
+
+let obj5 = {name : "Lagos",
+           population : 1250000,
+           temp : 15.0,
+           currency : "NG"};
+let obj6 = {name : "London",
+           population : 1250000,
+           temp : -5.0,
+           currency : "NG"};
+let obj7 = {name : "Sydney",
+           population : 1250000,
+           temp : 10.0,
+           currency : "NG"};
+
+let obj8 = {name : "Lagos",
+           population : 1250000,
+           temp : 15.0,
+           currency : "NG"};
+let obj9 = {name : "London",
+           population : 1250000,
+           temp : -5.0,
+           currency : "NG"};
+
+
+
+raw_array = [];
+raw_array.push([null,obj1,obj2,obj3]);
+raw_array.push([obj4,obj5,obj6,null]);
+raw_array.push([obj7,null,obj8,obj9]);
+console.table(raw_array);
+let sumOfPopulation = 0;
+let nameOfCity = "";
+let nameOfcurruncy = ""
+for(let i = 0; i < raw_array.length; i++){
+    for(let j = 0; j < raw_array[i].length; j++){
+        if(raw_array[i][j] != null){
+            if(raw_array[i][j].temp <= 10){
+            sumOfPopulation += raw_array[i][j].population;
+            }
+        
+        }
+        
+    }
+}
+console.log(sumOfPopulation)
+
+
